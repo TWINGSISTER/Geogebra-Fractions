@@ -1,18 +1,20 @@
 # Geogebra-Fractions
-A collection of GGB tools to implement the rational numbers data type as two element lists.
-Also some bidimensional vectors with rational components is implemented.
-To use them take the basic-empty-library.ggb  This file has all the tools and no construction.
-File empty-library.ggb  has all the tools and some basic construction.
-The file example-with-library.ggb contains an example for a quiz on the bisector line.
-The set of GGB tools are created with the following inputs to the command line in GGB
-Rationals are represented by two element lists {a,b} is a/b
+A collection of GGB tools to implement the rational numbers data type as two element lists. Also some bidimensional vectors with rational components is implemented. More on defining tools can be found [here](https://primi235711.altervista.org/moodle/course/view.php?id=5#section-4)
+
+To use them take the basic-empty-library.ggb  This file has all the tools and no construction. File empty-library.ggb  has all the tools and some basic construction. The file example-with-library.ggb contains an example for a quiz on the bisector line.
+
+The set of GGB tools are created with the following inputs to the command line in GGB Rationals are represented by two element lists {a,b} is a/b
+
 `qn={1,2}`
 `qa={1,2}`
 `qb={1,2}`
-`n=1`
-and then simplification qs gives the most simplified fraction with positive denominator
+
+Simplification qs gives the most simplified fraction with positive denominator
+
 `qsin={Element[qn, 1] / GCD[Element[qn, 1], Element[qn, 2]], Element[qn,2] / GCD[Element[qn, 1], Element[qn, 2]]}`
+
 `qs=If(Element(qsin, 1) > 0, If(Element(qsin, 2) > 0, qsin, {-Element(qsin, 1), -Element(qsin, 2)}), If(Element(qsin, 2) > 0, qsin, {-Element(qsin, 1), -Element(qsin, 2)}))`
+
 multiplication
 `qm={Element[qa, 1] Element[qb, 1], Element[qa, 2] Element[qb, 2]}`
 
