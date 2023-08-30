@@ -1,6 +1,9 @@
 # Geogebra-Fractions
-A collection of GGB tools to implement the rational numbers data type as two element lists
-
+A collection of GGB tools to implement the rational numbers data type as two element lists.
+Also some bidimensional vectors with rational components is implemented.
+To use them take the basic-empty-library.ggb  This file has all the tools and no construction.
+File empty-library.ggb  has all the tools and some basic construction.
+The file example-with-library.ggb contains an example for a quiz on the bisector line.
 The set of GGB tools are created with the following inputs to the command line in GGB
 Rationals are represented by two element lists {a,b} is a/b
 `qn={1,2}`
@@ -45,7 +48,7 @@ output simplified
 Each create a single tool that is available here as a .ggt. 
 
 This data type then is used to build a data type for two dimensional vectors
-represented as list of TWO lists of TWO integers. GGB represent this as a matrix but this feature in not used. 
+represented as list of TWO lists of TWO integers e.g. {{1, 2}, {3, 4}} for (1/2,3/4). GGB represent this as a matrix but this feature in not used. 
 
 The operations are:
 sum 
@@ -59,7 +62,7 @@ dot product
 scalar product
 `vsp={qm[qa, Element[va, 1]], qm[qa, Element[va, 2]]}`
 
-unitary vector with rational components for m,n naturals 
+generate a unitary vector with rational components for two m,n naturals 
 `pyt={{(m + n)² - n², (m + n)² + n²}, {2 (m + n) n, (m + n)² + n²}}`
 
 slope of a vector with rational components as a rational number
